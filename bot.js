@@ -66,4 +66,8 @@ bot.on('end', () => {
 });
 const http = require("http");
 
-const
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.end("Bot läuft");
+}).listen(PORT);
