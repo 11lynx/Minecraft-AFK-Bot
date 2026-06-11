@@ -64,10 +64,3 @@ bot.on('error', (err) => {
 bot.on('end', () => {
   console.log('⛔️ Bot Disconnected!');
 });
-const http = require("http");
-
-const PORT = process.env.PORT || 3000;
-
-http.createServer((req, res) => {
-  res.end("Bot läuft");
-}).listen(PORT);
